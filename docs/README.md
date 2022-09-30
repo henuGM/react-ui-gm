@@ -7,7 +7,7 @@
 <p align="center">
 五脏俱全的组件库教学模型
 </p>
-https://img.shields.io/github/license/henuGM/react-ui-gm
+<img src="https://img.shields.io/github/license/henuGM/react-ui-gm" />
 
 ## Features
 
