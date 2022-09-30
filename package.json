@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "tsc && vite build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "prepare": "husky install"
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./scripts/build.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,8 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^9.8.8",
+    "esno": "^0.16.3",
     "happy-dom": "6.0.4",
     "jsdom": "^20.0.0",
     "prettier": "2.7.1",

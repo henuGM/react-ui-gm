@@ -1,11 +1,11 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
+import { defineConfig, UserConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import Unocss from './config/unocss'
 
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export const config=({
   plugins: [
     react(),
     Unocss()
@@ -28,8 +28,8 @@ export default defineConfig({
     lib: {
       entry: "./src/index.ts",
       name: 'react-ui-gm',
-      // formats: ['es'],
-      fileName: (format) => `react-ui-gm.${format}.js`
+      formats: ["esm", "umd","iife"],
+      fileName: (format) => `react-ui-gm.${format}.js`,
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
@@ -38,10 +38,12 @@ export default defineConfig({
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
         globals: {
           react: 'React'
-        }
+        },
+        extend: true,
+        assetFileNames:()=> 'style.css'
       }
     },
-    outDir: 'lib/dist'
+    outDir: "./dist"
   }
     //   minify:false,
   //   cssCodeSplit: true,   
@@ -54,7 +56,4 @@ export default defineConfig({
   //   },
   // },
 })
-function resolve(__dirname: string, arg1: string): string {
-  throw new Error('Function not implemented.')
-}
-
+export default defineConfig(config as UserConfig);
