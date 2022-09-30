@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { SButton } from "react-ui-gm/dist/Button/Button.esm";
-import "react-ui-gm/dist/Button/style.css";
+// import "react-ui-gm/dist/Button/style.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
