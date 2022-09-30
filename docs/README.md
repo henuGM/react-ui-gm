@@ -2,12 +2,12 @@
 <img src="https://github.com/henuGM/react-ui-gm/blob/main/assets/ic_launcher.png" style="width:200px;" />
 </p>
 
-<h1 align="center">Smarty-Admin-UI</h1>
+<h1 align="center">react-ui-gm</h1>
 
 <p align="center">
 五脏俱全的组件库教学模型
 </p>
-<img src="https://img.shields.io/github/license/henuGM/react-ui-gm" />
+<img src="https://img.shields.io/github/license/henuGM/react-ui-gm" align="center" />
 
 ## Features
 
@@ -19,4 +19,3 @@
 - 采用Rollup构建
 - Vitepress + Vercel 文档网站搭建
 - 基于Action CI 实现持续集成与交付
-# Website
