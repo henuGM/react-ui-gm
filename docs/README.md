@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/henuGM/react-ui-gm/blob/main/assets/ic_launcher.png" style="width:200px;" />
+<img src="https://github.com/henuGM/react-ui-gm/blob/main/assets/torch.png" style="width:200px;" />
 </p>
 
 <h1 align="center">react-ui-gm</h1>
