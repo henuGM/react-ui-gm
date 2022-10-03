@@ -5,7 +5,7 @@ import fs from "fs";
 
 import chalk from "chalk";
 const log = (...args) => console.log(chalk.green(...args));
-
+import handlebars from "handlebars";
 
 export default async () => {
   const { name } = await inquirer.prompt([
@@ -19,7 +19,7 @@ export default async () => {
   log("🚌 创建项目:" + name);
 
   // 从github克隆项目到指定文件夹
-  await clone("github:smarty-team/smarty-ui-app-js-template", name);
+  await clone("github:henuGM/react-ui-gm-template", name);
 
   // 生成路由定义
   compile(
@@ -47,7 +47,7 @@ npm run dev
  * @param filePath 目标文件路径
  * @param templatePath 模板文件路径
  */
- function compile(meta, filePath, templatePath) {
+function compile(meta, filePath, templatePath) {
   if (fs.existsSync(templatePath)) {
     const content = fs.readFileSync(templatePath).toString();
     const result = handlebars.compile(content)(meta);

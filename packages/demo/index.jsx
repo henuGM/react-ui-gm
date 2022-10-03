@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { SButton } from "react-ui-gm/dist/Button/Button.esm";
-// import "react-ui-gm/dist/Button/style.css";
+import { SButton } from "react-ui-gm";
+import "react-ui-gm/dist/style.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -58,7 +58,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </SButton>
     </div>
     <div style={{marginBottom:"20px"}}>
-      <SButton color="blue" round plain icon="search"></SButton>
+      <SButton color="blue" round plain icon="tishi"></SButton>
       <SButton color="green" round plain icon="edit"></SButton>
       <SButton color="gray" round plain icon="check"></SButton>
       <SButton color="yellow" round plain icon="message"></SButton>
