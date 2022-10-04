@@ -1,4 +1,4 @@
-## Button
+# Button
 
 ```jsx
 import React from 'react';
