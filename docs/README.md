@@ -10,8 +10,8 @@
 <p align="center">
 <img src="https://img.shields.io/github/license/henuGM/react-ui-gm" align="center" />
 </p>
-## Features
 
+## Features
 前端工程化入门项目
 - 基于 React 框架
 - Jest + plugins 实现单元测试
