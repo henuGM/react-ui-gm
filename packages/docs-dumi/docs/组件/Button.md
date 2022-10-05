@@ -61,7 +61,7 @@ yiwen|疑问
 xuanzewendnag|选择文档
 youduiqi|右对齐
 xunhuan|循环
-binaji|编辑
+bianji|编辑
 xiugai|修改
 xinhao|信号
 xiaoxi|消息
