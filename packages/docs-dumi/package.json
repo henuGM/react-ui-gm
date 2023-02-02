@@ -27,6 +27,6 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
-    "react-ui-gm": "1.0.4"
+    "react-ui-gm": "1.0.5"
   }
 }

@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { SButton } from "react-ui-gm";
 import "react-ui-gm/dist/style.css";
+import FormDemo from "./form";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -57,12 +59,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         删除按钮
       </SButton>
     </div>
-    <div style={{marginBottom:"20px"}}>
-      <SButton color="blue" round plain icon="tishi"></SButton>
-      <SButton color="green" round plain icon="edit"></SButton>
-      <SButton color="gray" round plain icon="check"></SButton>
-      <SButton color="yellow" round plain icon="message"></SButton>
-      <SButton color="red" round plain icon="delete"></SButton>
+    <div>
+      <FormDemo></FormDemo>
+
     </div>
+
   </React.StrictMode>
 );

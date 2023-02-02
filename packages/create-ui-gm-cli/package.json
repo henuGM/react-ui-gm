@@ -21,6 +21,7 @@
     "figlet": "1.5.2",
     "handlebars": "^4.7.7",
     "inquirer": "9.1.0",
-    "ora": "6.1.2"
+    "ora": "6.1.2",
+    "react-ui-gm": "^1.0.5"
   }
 }

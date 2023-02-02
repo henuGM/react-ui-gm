@@ -4,8 +4,8 @@
 import React from 'react';
 import {SButton} from 'react-ui-gm'
 import 'react-ui-gm/dist/style.css'
-export default () => 
-<>
+export default () =>{
+return (<>
     <div>
       <SButton color="red" size="small">红色按钮</SButton>
       <SButton color="green" size="medium">绿色按钮</SButton>
@@ -41,7 +41,7 @@ export default () =>
       <SButton color="green" size="medium" plain icon="xiaoxi">绿色按钮</SButton>
       <SButton color="blue" size="large" plain icon="gongzuotai">蓝色按钮</SButton>
     </div>
-</>;
+</>)};
 ```
 ## API
 Name | Description | Type | Default | Options
