@@ -27,6 +27,8 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
+    "@umijs/babel-preset-umi": "^4.0.48",
+    "pnpm": "^7.26.3",
     "react-ui-gm": "1.0.5"
   }
 }
