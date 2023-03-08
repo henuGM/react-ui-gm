@@ -1,4 +1,4 @@
-# dumi app
+# dumi-demo
 
 ## Getting Started
 
@@ -14,7 +14,19 @@ Start the dev server,
 $ npm start
 ```
 
-Build site app,
+Build documentation,
+
+```bash
+$ npm run docs:build
+```
+
+Run test,
+
+```bash
+$ npm test
+```
+
+Build library via `father`,
 
 ```bash
 $ npm run build

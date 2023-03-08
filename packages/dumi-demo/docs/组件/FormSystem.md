@@ -1,4 +1,4 @@
-# Button
+# FormSystem
 
 ```jsx
 import React, { useRef, useEffect } from "react";
@@ -114,35 +114,3 @@ return (<>
     </div>
 </>)};
 ```
-## API
-Name | Description | Type | Default | Options
------|-------|------|--------|------|
-color | 有对颜色进行约束 | String | White| black \| gray \| red \| yellow \| green \| blue \| indigo \| purple \| pink
-size | 目前只有三种，可自行覆盖样式 | String | medium | small \| medium \| large
-plain | 对按钮朴素处理 | Boolean | false | true \| false
-round | 对按钮进行圆角处理 | Boolean | false | true \| false
-icon | 为按钮添加图标，或单独使用图标 | string | null | options如下
-
-## Icon Options
-Options | Description
---------|------------
-juzhongduiqi|居中对齐
-zuuoduiqi|左对齐
-yiwen|疑问
-xuanzewendnag|选择文档
-youduiqi|右对齐
-xunhuan|循环
-bianji|编辑
-xiugai|修改
-xinhao|信号
-xiaoxi|消息
-xiazai2|下载2
-tianjiawenjian|添加文件
-tianjiawendang|添加文档
-tianjia2|添加2
-tianjia1|添加1
-tixing|提醒1
-tishi|提示
-suoxiao|缩小
-gongzuotai|工作台
-zhichuhetong|支出合同
