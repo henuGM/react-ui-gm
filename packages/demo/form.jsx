@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Form, { Input, Select, SButton } from "react-ui-gm";
+import {Form, Input, Select, SButton } from "react-ui-gm";
 
 const FormItem = Form.FormItem;
 const Option = Select.Option;

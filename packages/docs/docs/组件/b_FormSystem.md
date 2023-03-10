@@ -2,7 +2,7 @@
 
 ```jsx
 import React, { useRef, useEffect } from "react";
-import Form, { Input, Select, SButton } from "react-ui-gm";
+import  {Form, Input, Select, SButton } from "react-ui-gm";
 import 'react-ui-gm/dist/style.css'
 
 const FormItem = Form.FormItem;

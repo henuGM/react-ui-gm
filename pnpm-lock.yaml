@@ -57,7 +57,7 @@ importers:
     specifiers:
       react: ^18.2.0
       react-dom: ^18.2.0
-      react-ui-gm: workspace:^1.0.0
+      react-ui-gm: workspace:^1.2.1
       vite: ^3.1.4
     dependencies:
       react: 18.2.0
@@ -78,7 +78,7 @@ importers:
       lint-staged: ^10.0.7
       prettier: ^2.2.1
       react: ^18.0.0
-      react-ui-gm: ^1.0.5
+      react-ui-gm: workspace:^1.2.1
       yorkie: ^2.0.0
     dependencies:
       react: 18.2.0

@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import { SButton } from "react-ui-gm";
 import "react-ui-gm/dist/style.css";
 import FormDemo from "./form";
-
+import AsyncDemo from "./asyncComponent";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <AsyncDemo></AsyncDemo>
     <div style={{marginBottom:"20px"}}>
       <SButton color="blue">主要按钮</SButton>
       <SButton color="green">绿色按钮</SButton>
