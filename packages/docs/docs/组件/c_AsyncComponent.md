@@ -1,6 +1,9 @@
 # AsyncComponent
+由于在dumi中无法渲染Symbol(React.lazy())类型,故这里无法展示；
 
-```jsx
+
+[展示链接](https://react-ui-gm-demo.netlify.app)
+```
 import React, { Component, Suspense } from 'react';
 import { AsyncComponent } from 'react-ui-gm';
 
