@@ -1,5 +1,15 @@
 # 第八章：搭建表单系统
 
+### DOM结构图：
+<div style={{width:1}}>
+<img src="../../public/images/FormSystemDOM.png" align="center"  />
+</div>
+
+### 代码结构图：
+<div style={{width:1}}>
+<img src="../../public/images/FormSystem.png" align="center"  />
+</div>
+
 ### 一个表单系统大体包括什么？
 
  1. FormStore：用来保存Form的状态Model；

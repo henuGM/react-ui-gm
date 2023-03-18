@@ -3,6 +3,22 @@
 
 
 [展示链接](https://react-ui-gm-demo.netlify.app)
+
+AsyncComponent的代码只有这一个函数：
+AsyncComponent接受Component和api两个参数，通过promise将异步数据挂载到Component上，然后将这个promise作为React.lazy的参数；
+
+```
+function AysncComponent(Component,api){
+    const AysncComponentPromise = () => new Promise(async (resolve)=>{
+          const data = await api()
+          resolve({
+              default: (props) => <Component rdata={data} { ...props}  />
+          })
+    })
+    return React.lazy(AysncComponentPromise)
+}
+```
+
 ```
 import React, { Component, Suspense } from 'react';
 import { AsyncComponent } from 'react-ui-gm';
@@ -25,9 +41,7 @@ export default () => {
     return (
       <div>
         <Suspense fallback={<div>loading...</div>}>
-          {/* 由于在dumi中无法渲染Symbol(React.lazy())类型，故这里使用text站位，在普通项目中，这里使用<LazyText/>即可实现异步*/}
-          <text>这是异步组件，详细请看代码</text>
-          {/* <LazyText/>//这个是实际用法 */}
+          <LazyText/>
         </Suspense>
       </div>
     );
