@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pnpm": "^7.12.2",
+    "pnpm": "^8.14.1",
     "vite": "3.0.7"
   }
 }
