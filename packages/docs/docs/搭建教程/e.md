@@ -13,7 +13,8 @@ npm i -g nrm
 ```
 nrm ls
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/49e7c026a12b48cfa7c4101d5eb71b32.png)
+![在这里插入图片描述](../../public/docs/p5/1.png)
+
 ##### vite打包处理：
 在src/entry.ts中引入index.css否则无法打包css：
 ```
@@ -98,25 +99,30 @@ pnpm i esno
 pnpm build
 ```
 打包结果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0b340be5f1d04b329556256c2aef6940.png)
+![在这里插入图片描述](../../public/docs/p5/2.png)
+
 在我们将组件库react-ui-teaching发布到npm之前，我们先将npm源切换到官方源：
 ```
 nrm use npm
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/58c49cc2aeaa4d2897b3a7f60422f86d.png)
+![在这里插入图片描述](../../public/docs/p5/3.png)
+
 然后我们需要有一个npm的账号：https://www.npmjs.com/signup
 完成登录注册之后，我们在项目根目录cmd键入：
 ```
 npm adduser
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5eaca61f8b8547838fd332faf7d8c15a.png)
+![在这里插入图片描述](../../public/docs/p5/4.png)
+
 最后检查一下package.json中的配置是不是自己想要的：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8ab30dcb6bd6444ba0977735c1c00db1.png)
+![在这里插入图片描述](../../public/docs/p5/5.png)
+
 确认之后，命令行键入：
 ```
 npm publish
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f298e304f71e450e96d3d19f527b24cb.png)
+![在这里插入图片描述](../../public/docs/p5/6.png)
+
 ### 验证效果：
 我们在packages下新建项目react-ui-teaching-template来试一试刚发布的组件库：
 ```
@@ -163,6 +169,7 @@ export default App
 pnpm dev
 ```
 效果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c0e599d7a37240a8a6de356dfd04272a.png)
+![在这里插入图片描述](../../public/docs/p5/7.png)
+
 引入成功；
 像自动化部署这些配置，我会专门拿出一章来讲；

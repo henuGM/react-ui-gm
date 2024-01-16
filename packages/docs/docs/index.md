@@ -24,4 +24,3 @@ nav:
 - 利用 Monorepo 方式管理组件库生态
 - 采用 Vite 构建
 - 采用 Dumi + Netlify 文档网站搭建
-- 基于 Action CI 实现持续集成与交付

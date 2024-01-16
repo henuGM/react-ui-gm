@@ -54,7 +54,7 @@ pnpm i vite@latest -D
 ```
 npx vite
 ```
-![](https://img-blog.csdnimg.cn/7be7b210f739499baa5dfa8b30bd9f66.png)
+![](../../public/docs/p1/1.png)
 vite无需任何配置就可以提供一个typescript开发环境，支持自动热更新；
 我们改一下package.json中的npm script脚本：
 ```
@@ -119,11 +119,11 @@ export default SButton;
 pnpm dev
 ```
 效果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a7f7043a8e174c14b52068c2ce7df91f.png)
+![在这里插入图片描述](../../public/docs/p1/2.png)
 
 #####  配置vite打包规则
 目前，我们项目的src目录结构时这样的：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/fb1e91cd440d4f39a749411c820c9549.png)
+![在这里插入图片描述](../../public/docs/p1/3.png)
 首先，我们需要在src目录下再新建entry.ts文件作为组件库全量的输出口：
 ```
 import SButton from "../Button/index";
@@ -183,8 +183,8 @@ export default defineConfig(config as UserConfig);
 npx vite build
 ```
 结果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c2adbb8d4400433293713355124dbe2c.png)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/e8c86f35302a408e8da2b44ca8a5cc28.png)
+![在这里插入图片描述](../../public/docs/p1/4.png)
+![在这里插入图片描述](../../public/docs/p1/5.png)
 在package.json中修改npm script：
 ```
   "scripts": {
@@ -209,7 +209,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 pnpm dev
 ```
 结果如下：
-![](https://img-blog.csdnimg.cn/09ed485a62ad4450b0c2a1ee7949766e.png)
+![](../../public/docs/p1/6.png)
 说明打包正常；
 OK,目前为止，我们已近初步实现了一个react组件库的MVP；
 下一章我们引入tailwindcss；

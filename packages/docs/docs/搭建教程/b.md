@@ -208,12 +208,12 @@ export default SButton;
 ### 做一下icon的处理：
 本身Tailwindcss是带有icon库的，也就是 heroicons；
 但是 heroicons无法通过tsx标签中的className来展示图标，故我们放弃使用herocions，选择引入阿里的iconfont；
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3fdd61a2f7b84b0a889ab2deeeec545d.png)
+![在这里插入图片描述](../../public/docs/p2/1.png)
 我们将想要引入支持的图标放到一个项目里，然后考虑引入方法；
 这里是有直接下载和动态链接两种引入方式的；
 由于动态连接受网速影响比较大，而且连接不稳定，故我们最后选择直接将需要的icon文件下载到本地；
 下载后在根目录下新建public文件夹，里面新建iconfont文件夹，把下载的icon文件放到里面：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b29502ef76344dbf988a1839d7e06a27.png)
+![在这里插入图片描述](../../public/docs/p2/2.png)
 在src/index.tsx中引入iconfont文件：
 ```
 import React from "react";
@@ -346,5 +346,5 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 pnpm dev
 ```
 效果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8cf78e2013234ad49e3ce80219639679.png)
+![在这里插入图片描述](../../public/docs/p2/3.png)
 OK，到目前为止，Tailwindcss我们已经引入成功！

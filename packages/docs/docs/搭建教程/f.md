@@ -24,7 +24,8 @@ pnpm i dumi
 pnpm i
 pnpm start
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/32dfd6b475e94de08c67ffad23eb9e84.png)
+![在这里插入图片描述](../../public/docs/p6/1.png)
+
 默认打开的是站点模式，组件文档不需要那么花里胡哨，我们改成文档模式：
 ```
 // .umirc.ts
@@ -38,9 +39,11 @@ export default defineConfig({
 });
 ```
 看看效果：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/120f1de3ffcf42218fb9e3576d005b79.png)
+![在这里插入图片描述](../../public/docs/p6/2.png)
+
 通过配置项修改文档logo：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a3f02a57fb11484ea7a325fc3687b6fc.png)
+![在这里插入图片描述](../../public/docs/p6/3.png)
+
 我们把准备好的logo放到docs项目的public的images文件夹中，然后。修改.umirc.ts:
 ```
 import { defineConfig } from 'dumi';
@@ -53,7 +56,8 @@ export default defineConfig({
 });
 ```
 看看效果：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7ef66d31a31248e9bad305ffcde644b3.png)
+![在这里插入图片描述](../../public/docs/p6/4.png)
+
 可以看到文档中的logo已经修改好了，但是上面tab的icon还没有替换：
 ```
 // .umirc.ts
@@ -71,9 +75,11 @@ export default defineConfig({
   // more config: https://d.umijs.org/config
 });
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/41864c0ee6194160b8a3a085a891ea8d.png)
+![在这里插入图片描述](../../public/docs/p6/5.png)
+
 然后具体的md文档在docs/docs文件夹下写：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8218093044674f828e70403fb3600d86.png)
+![在这里插入图片描述](../../public/docs/p6/6.png)
+
 下面看看如何在文档中用jsx：
 先安装一下我们的react-ui-teaching
 ```
@@ -163,5 +169,6 @@ zhichuhetong|支出合同
 pnpm start
 ```
 效果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/77dd55e473884fedb6028a931f167cd7.png)
+![在这里插入图片描述](../../public/docs/p6/7.png)
+
 下一章我们通过netlify部署一下文档；

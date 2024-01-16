@@ -2,7 +2,7 @@
 ### 前置知识：
 ##### 什么是Monorepo？
 Monorepo 的意思是在版本控制系统的单个代码库包含很多其他项目的代码；
-![在这里插入图片描述](https://img-blog.csdnimg.cn/055af551000f43e2b05a655bec21deee.png)
+![在这里插入图片描述](../../public/docs/p4/1.png)
 Unocss源码就是典型的Monorepo项目；
 ##### Monorepo方式的优势是什么？
 
@@ -20,7 +20,8 @@ Unocss源码就是典型的Monorepo项目；
 |--- package.json
 ```
 修改后是这样：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4cdac3b79bca45299e3ea2aa1855ab54.png)
+![在这里插入图片描述](../../public/docs/p4/2.png)
+
 目前的根目录是 react-ui-teaching-monorepo 文件夹;
 在根目录初始化pnpm：
 ```
@@ -63,7 +64,8 @@ if (!/pnpm/.test(process.env.npm_execpath || '')) {
 npm i
 ```
 效果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/454ac8e42bc146df88799e6775f0e8b9.png)
+![在这里插入图片描述](../../public/docs/p4/3.png)
+
 npm命令已经被拦截；
 ### 初始化工作空间：
 在Monorepo项目中，每个软件包会存放在工作空间；

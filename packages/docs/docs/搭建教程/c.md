@@ -91,7 +91,7 @@ dist
 pnpm lint
 ```
 结果如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20baa67268524501b2b38d60373ff972.png)
+![在这里插入图片描述](../../public/docs/p3/1.png)
 这就是eslint发挥作用了；
 修改这个问题我们只需要将 .eslintrc.cjs 文件中的parseOptions的注释去掉：
 ```
@@ -101,14 +101,14 @@ pnpm lint
     },
 ```
 再次运行 pnpm lint：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1a5f324b0f8e410da4c0f34d977d0505.png)
+![在这里插入图片描述](../../public/docs/p3/2.png)
 errors消失了；
 命令行键入：
 ```
 pnpm format
 ```
 效果：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d225cc091a5b41a58db4052059067ac0.png)
+![在这里插入图片描述](../../public/docs/p3/3.png)
 代码成功格式化，prettier生效；
 ### 配置 Husky:
 安装：
@@ -137,10 +137,10 @@ pnpm i
 npx husky add .husky/pre-commit "pnpm lint"
 ```
 在 .huksy目录下生成了 pre-commit 文件 ：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4336ff1132c143c0a377e0554b13a3a3.png)
+![在这里插入图片描述](../../public/docs/p3/4.png)
 现在，我们用git 去 commit一下我们的代码，效果如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c112993ff0e94d009da1c371e037664c.png)
+![在这里插入图片描述](../../public/docs/p3/5.png)
 可以看到，eslint在commit之前运行了；
 
 我们也可以在push之前进行单元测试：
